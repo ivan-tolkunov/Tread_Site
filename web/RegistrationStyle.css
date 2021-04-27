@@ -1,0 +1,87 @@
+html, body {
+    height: 100px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "SMW Text NC";
+    background: linear-gradient(75deg, #12c2e9, #c471ed, #f64f59);
+    background-size: 400%;
+    animation: gradient 16s infinite alternate ;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+h1 {
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 3px;
+    border-bottom: 5px solid hotpink;
+}
+
+form {
+    margin: 200px auto;
+    align: center;
+    width: 450px;
+    border-radius: 40px/40px;
+    background: whitesmoke;
+    padding: 5px;
+    height: 300px;
+}
+
+.group {
+    margin: 10px;
+    padding: 5px;
+}
+
+label {
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+input {
+    margin-top: 10px;
+    height: 40px;
+    width: 420px;
+    border-radius: 40px 10px;
+    border: none;
+    outline: none;
+    padding-left: 16px;/*отступ букв слева**/
+    font-family: "SMW Text NC";
+    font-size: 25px;
+
+}
+
+input:focus {
+    border: 3px solid #12c2e9;
+    transition: 0.3s;
+}
+
+.transition_button {
+
+    cursor: pointer;
+    padding: 10px 30px;
+    border: 0;
+    outline: none;
+    border-radius: 20px/20px;
+    font-family: "SMW Text NC";
+    font-size: 23px;
+    background-image: linear-gradient(45deg, #c471ed, #12c2e9, #c471ed, #12c2e9, #c471ed);
+    background-size: 300%;
+    background-position: left;
+    transition: background-position 1s;
+
+}
+
+.transition_button:hover,
+.transition_button:focus {
+    background-position: right;
+}
